@@ -1,0 +1,237 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8"/>
+	
+	<title>NBS MOBILE THEME</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on"/>
+	
+	<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.pagination.css">
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body class="ui-mobile-viewport">
+
+<div id="menu">
+	<div id="memberDetails">
+		<h3><span>Welcome,</span><br> <em>John Doe</em></h3>
+	</div>
+
+	<ul>
+		<li class="active"><a href="#home" class="contentLink">Dashboard <span class="icon"></span></a></li>
+		<li><a href="#page1" class="contentLink">Subpage 1 <span class="icon"></span></a></li>
+		<li><a href="#page2" class="contentLink">Subpage 2 <span class="icon"></span></a></li>
+		<li><a href="#page3" class="contentLink">Subpage 3 <span class="icon"></span></a></li>
+	</ul>
+</div>
+
+
+
+<div style="min-height: 677px; margin-left: 0px;" tabindex="0" data-url="home" data-role="page" class="pages ui-page ui-body-c ui-page-active" id="home">
+	
+	<div role="banner" class="ui-header ui-bar-a" data-role="header" data-theme="a">
+	
+	<a data-theme="a" href="#" class="showMenu menuBtn ui-btn-left ui-btn ui-btn-corner-all ui-shadow ui-btn-up-a"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text"><img src="images/nav_ui.png" alt="nav_ui" width="20" height="20" /></span></span></a>
+		<h1 aria-level="1" role="heading" tabindex="0" class="ui-title">My Resume</h1>
+	</div><!-- /header -->
+	
+	<div role="main" class="ui-content" data-role="content">
+		<h3>FB Style Page Slide Menu</h3>
+		<p>You can swipe to show the menu and hide it.</p>
+		<p>Bla Bla Bla.</p>
+	</div><!-- /content -->
+	ffjkkjgg
+</div><!-- /page -->
+
+
+	
+<!--My Form Addon-->	
+	<div data-role="page" id="order" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1>Place Your Order</h1>
+		</div>
+		<center><img src="images/logo.png" style="padding: 5px;" width="111px" height="120px"/></center>
+		<div data-role="content">
+		
+			<form action="" method="post" id="myorder">
+		
+				<div data-role="fieldcontain">
+					<label for="ordername">Name:</label>
+					<input type="text" name="ordername" id="ordername" value="" placeholder="First and last name" class="required"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="orderemail">Email:</label>
+					<input type="text" name="orderemail" id="orderemail" value="" placeholder="me@where.com" class="required email"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="orderhomepage">Home Page:</label>
+					<input type="text" name="orderhomepage" id="orderhomepage" value="" placeholder="http://mysite.com" class="required url"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="ordergender">Gender:</label>
+					<select data-role="slider">
+						<option value="off">Male</option>
+						<option value="on">Female</option>
+					
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Are you 18 and Up?</legend>
+						<input type="radio" value="No" name="verify" id="verify-1" class="required"/>
+						<label for="verify-1">No</label>
+						<input type="radio" value="Yes" name="verify" id="verify-2"/>
+						<label for="verify-2">Yes</label>
+					</fieldset>
+				</div>
+				
+<!-- Meaningful commit using datebox plugin as discussed in wimba + above and over	
+				<div data-role="fieldcontain">
+   					<label for="mydate">Date of Birth:</label>
+					<input name="mydate" value="" placeholder="MM/DD/YYYY" id="mydate" type="date" data-role="datebox" data-options='{"mode": "flipbox"}'>
+				</div>
+ meaningful commit end-->
+				
+				<div data-role="fieldcontain">
+					<label for="myordertype">Flower Selection:</label>
+					<select name="myordertype" id="myordertype" data-native-menu="false" class="required">
+						<option data-placeholder="true">Please Select One</option>
+						<optgroup label="Daisies">
+							<option value="daisy-1a">White Daisy Basket</option>
+							<option value="daisy-1b">Basket of Sunshine</option>
+							<option value="daisy-1c">Gerbera Daisy Bouquet</option>
+							<option value="daisy-1d">Lemonade in a Pitcher</option>
+							<option value="daisy-1e">Elegant Wishes Vase</option>
+						</optgroup>
+						<optgroup label="Lilies">
+							<option value="lily-1a">All White Lilies</option>
+							<option value="lily-1b">Stargazer Lilies</option>
+							<option value="lily-1c">lilies in a Pitcher</option>
+							<option value="lily-1d">Pink Perfection Lilies</option>
+							<option value="lily-1e">Elegance Calla Lilies</option>
+						</optgroup>
+						<optgroup label="Orchids">
+							<option value="orchid-1a">Exotic Breeze Orchids</option>
+							<option value="orchid-1b">Magenta Orchids</option>
+							<option value="orchid-1c">Lavender Mist Orchids</option>
+							<option value="orchid-1d">White Orchid Bamboo</option>
+							<option value="orchid-1e">Botanical Orchid Duet</option>
+						</optgroup>
+						<optgroup label="Roses">
+							<option value="rose-1a">Passion Pink Roses</option>
+							<option value="rose-1b">Red Long Stem Roses</option>
+							<option value="rose-1c">Passion White Roses</option>
+							<option value="rose-1d">Assorted Roses</option>
+							<option value="rose-1e">Passion Yellow Roses</option>
+						</optgroup>
+						<optgroup label="Tulips">
+							<option value="tulip-1a">Timeless Tulips</option>
+							<option value="tulip-1b">Perfectly Pink Tulips</option>
+							<option value="tulip-1c">Spring Country Tulips</option>
+							<option value="tulip-1d">Yellow Tulips in a Pitcher</option>
+							<option value="tulip-1e">Spring Orange Tulips</option>
+						</optgroup>
+					
+					
+					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="order">Quantity:</label><br />
+					<input type="range" name="ordertotal" id="ordertotal" value="3" min="1" max="5"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="select">Shipping Method</label>
+						<select name="select" id="select-choice1">
+							<option value="standard">Standard</option>
+							<option value="not-standard">Not-Standard</option>
+						</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="orderinfo">Additional Info:</label>
+					<textarea value="" placeholder="More info about your flower purchase here..."></textarea>
+				</div>
+
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Agree to terms:</legend>
+						<input type="checkbox" id="verifytos" value="I agree." name="verifyterms" id="verifytos" class="required"/>
+						<label for="verifytos">I agree.</label>
+					</fieldset>
+				</div>
+				
+				<fieldset>
+					<div><button type="submit" data-theme="b">Submit</button></div>
+					<div><button type="reset" data-theme="c">Clear All</button></div>	   
+				</fieldset>
+		
+				<a href="#ordererrors" id="myerrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
+				
+			</form>
+		
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="order" data-theme="a">
+			<div data-role="navbar">
+				<ul>				
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#GitHub" data-icon="gear">GitHub</a></li>
+					<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#order" data-icon="check">Order</a></li>
+					<li><a href="b.html" data-icon="delete">B-App</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>			
+	</div>	
+	
+	<div data-role="dialog" id="ordererrors">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Missing Items</h1>
+		</div>
+		
+		<div data-role="content">
+		<ul>
+			<li>Test</li>
+		</ul>
+		</div>
+	</div>	
+												
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.mobile.pagination.js"></script>
+	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+	<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js"></script>
+	<script type="text/javascript" src="js/libs/app.js"></script>	
+	<script type="text/javascript" src="js/json.js"></script>	
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
